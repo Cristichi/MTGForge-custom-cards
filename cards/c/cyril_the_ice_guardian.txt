@@ -1,0 +1,12 @@
+Name: Cyril, the Ice Guardian
+ManaCost: 2 U U
+Types: Legendary Creature Dragon
+PT:3/2
+
+K:Flying
+
+A:AB$ Tap | Cost$ 3 U T | ValidTgts$ Creature.OppCtrl | SubAbility$ DBPutCounter | TgtPrompt$ Select target creature an opponent controls to tap | TriggerDescription$ Tap target creature an opponent controls. Put a stun counter on it and another stun counter on Cyril.
+SVar:DBPutCounter:DB$ PutCounter | Defined$ Targeted | CounterType$ STUN | CounterNum$ 1 | SubAbility$ DBPutCounterSelf
+SVar:DBPutCounterSelf:DB$ PutCounter | Defined$ Self | CounterType$ STUN | CounterNum$ 1
+
+Oracle:Flying\n{3}{U}, {T}: Tap target creature an opponent controls. Put a stun counter on it and another stun counter on Cyril.

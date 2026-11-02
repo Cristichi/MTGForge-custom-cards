@@ -1,0 +1,13 @@
+Name:Warfang
+ManaCost:no cost
+Types:Land
+
+T:Mode$ ChangesZone | Origin$ Any | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigSac | TriggerDescription$ When Warfang enters the battlefield, sacrifice it unless you behold a Mole.
+SVar:TrigSac:DB$ Sacrifice | UnlessCost$ Behold<1/Mole> | UnlessPayer$ You
+
+A:AB$ Mana | Cost$ T | Produced$ Combo ColorIdentity | SpellDescription$ Add one mana of any color in your commander's color identity.
+AI:RemoveDeck:NonCommander
+
+K:Cycling:2
+
+Oracle:When Warfang enters the battlefield, sacrifice it unless you behold a Mole.\n{T}: Add one mana of any color.\nCycling {2}

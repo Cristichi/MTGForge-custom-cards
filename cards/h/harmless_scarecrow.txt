@@ -1,0 +1,12 @@
+Name:Harmless Scarecrow
+ManaCost:C
+Types:Artifact Creature Scarecrow
+PT:2/2
+
+K:Disguise:B
+K:A deck can have any number of cards named CARDNAME.
+
+T:Mode$ TurnFaceUp | ValidCard$ Card.Self | Execute$ TrigDraw | TriggerZones$ Battlefield | TriggerDescription$ When CARDNAME is turned face-up, draw a card.
+SVar:TrigDraw:DB$ Draw | NumCards$ 1 
+
+Oracle:Disguise {B} (You may cast this card face down for {3} as a 2/2 creature with ward 2. Turn it face up any time for its disguise cost.)\nWhen Harmless Scarecrow is turned face-up, draw a card.\nA deck can have any number of cards named Harmless Scarecrow.

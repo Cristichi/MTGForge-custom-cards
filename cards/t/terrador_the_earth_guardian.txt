@@ -1,0 +1,13 @@
+Name: Terrador, the Earth Guardian
+ManaCost: 2 G G
+Types: Legendary Creature Dragon
+PT:1/6
+
+K:Trample
+K:Reach
+
+A:AB$ Effect | Cost$ G G | SorcerySpeed$ True | RememberObjects$ Self | StaticAbilities$ DBHitHard | Duration$ UntilYourNextTurn | ForgetOnMoved$ Battlefield | SpellDescription$ CARDNAME assigns combat damage equal to its toughness rather than its power until your next upkeep.
+
+SVar:DBHitHard:Mode$ CombatDamageToughness | ValidCard$ Card.IsRemembered | Secondary$ True | Description$ CARDNAME assigns combat damage equal to its toughness rather than its power until your next upkeep.
+
+Oracle:Trample, reach\nGG: Terrador assigns combat damage equal to its toughness rather than its power until your next upkeep. Activate only as a sorcery.

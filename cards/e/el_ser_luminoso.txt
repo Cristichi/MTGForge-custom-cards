@@ -1,0 +1,9 @@
+Name:El Ser Luminoso
+ManaCost:1
+Types:Legendary Creature Shapeshifter
+PT:1/1
+K:Changeling
+A:AB$ ChangeZone | Cost$ 2/W 2/U 2/B 2/R 2/G T | Origin$ Graveyard | Destination$ Hand | TargetMin$ 0 | TargetMax$ 3 | TgtPrompt$ Choose up to three cards to return from your graveyard to your hand | ValidTgts$ Card.YouOwn+Kindred,Card.YourOwn+Shapeshifter | SpellDescription$ Return up to three target cards with Kindred or Shapeshifter from your graveyard to your hand.
+AI:RemoveDeck:NonCommander
+AI:RemoveDeck:All
+Oracle:Cambiaformas. (Esta carta es de todos los tipos de criatura en todo momento.)\n{2/W}{2/U}{2/B}{2/R}{2/G}, {T}: Regresa hasta tres cartas de estirpe o metaformo de tu cementerio a tu mano.

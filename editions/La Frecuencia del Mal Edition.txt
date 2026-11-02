@@ -1,0 +1,12 @@
+[metadata]
+Code=DFM
+Date=2026-02-13
+Name=La Frecuencia del Mal
+Type=Expansion
+
+[cards]
+1 M El Ser Luminoso @Cristichi
+
+[tokens]
+
+[other]

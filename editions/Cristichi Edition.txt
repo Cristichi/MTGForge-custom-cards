@@ -1,0 +1,16 @@
+[metadata]
+Code=CCC
+Date=2025-09-25
+Name=Cristichi Custom Cards
+Type=Expansion
+
+[cards]
+1 M Cristichi, Playing with Fire @Cristichi
+2 U Lost in the Feywilds @Cristichi
+3 U Power in Madness @Cristichi
+4 U High Forest Outcast @Cristichi
+
+[tokens]
+1 fire_incarnate @Cristichi
+
+[other]

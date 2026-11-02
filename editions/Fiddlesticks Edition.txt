@@ -1,0 +1,28 @@
+[metadata]
+Code=RAF
+Date=2025-09-25
+Name=Runeterran Magic: The Ancient Fear
+Type=Expansion
+
+[cards]
+1 M Fiddlesticks, the Ancient Fear @Cristichi
+2 C Harmless Scarecrow @Cristichi
+3 C Screaming Scarecrow @Cristichi
+4 C Whispering Scarecrow @Cristichi
+5 U Crowstorm @Cristichi
+6 C Ill-Omened Crow @Cristichi
+7 C Surprise Party @Cristichi
+8 U Summoner's Rift @Cristichi
+9 C Lurking Nightmare @Cristichi
+10 C Facecheck @Cristichi
+11 R Forgotten Terror @Cristichi
+12 C False Friend @Cristichi
+13 C Shallows Siren @Cristichi
+14 C Baleful Seeker @Cristichi
+15 R Dread Harvester @Cristichi
+16 U World Atlas @Cristichi
+
+[tokens]
+c_control_ward.txt
+
+[other]

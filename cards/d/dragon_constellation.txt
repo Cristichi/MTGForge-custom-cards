@@ -1,0 +1,10 @@
+Name:Dragon Constellation
+ManaCost:3 W W
+Types:Enchantment
+
+T:Mode$ Phase | Phase$ Upkeep | ValidPlayer$ You | TriggerZones$ Battlefield | IsPresent$ Creature.Dragon+YouCtrl | PresentCompare$ EQ0 | Execute$ TrigCounter | TriggerDescription$ At the beginning of your upkeep, if you control no Dragons, put a hope counter on this enchantment.
+SVar:TrigCounter:DB$ PutCounter | CounterType$ HOPE | CounterNum$ 1 | SpellDescription$ Put a hope counter on CARDNAME.
+
+A:AB$ ChangeZone | Cost$ T SubCounter<3/HOPE> | gtPrompt$ Select target Dragon in your graveyard | ValidTgts$ Creature.Dragon+YouCtrl | Origin$ Graveyard | Destination$ Hand | SpellDescription$ Return target Dragon from your graveyard to your hand.
+
+Oracle:At the beginning of your upkeep, if you control no Dragons, put a hope counter on this enchantment.\n{T}, Remove three hope counters from this enchantment: Return target Dragon from your graveyard to your hand.

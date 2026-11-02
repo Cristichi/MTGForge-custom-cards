@@ -1,0 +1,20 @@
+[metadata]
+Code=LPDM
+Date=2025-10-15
+Name=Legendary Purple Dragons Malefor
+Type=Expansion
+
+[cards]
+1 M Malefor, the Dark Master @Cristichi
+2 R The Destroyer @Cristichi
+3 C Shadow Ape @Cristichi
+
+93 Forest @Cristichi
+94 Plains @Cristichi
+95 Mountain @Cristichi
+96 Island @Cristichi
+97 Swamp @Cristichi
+
+[tokens]
+
+[other]

@@ -1,0 +1,12 @@
+Name:Screaming Scarecrow
+ManaCost:C
+Types:Artifact Creature Scarecrow
+PT:2/2
+
+K:Disguise:B
+K:A deck can have any number of cards named CARDNAME.
+
+T:Mode$ TurnFaceUp | ValidCard$ Card.Self | Execute$ TrigDamage | TriggerZones$ Battlefield | TriggerDescription$ When Screaming Scarecrow is turned face-up, it deals 2 damage to any target.
+SVar:TrigDamage:DB$ LoseLife | ValidTgts$ Any | LifeAmount$ 2
+
+Oracle:Disguise {B} (You may cast this card face down for {3} as a 2/2 creature with ward 2. Turn it face up any time for its disguise cost.)\nWhen Screaming Scarecrow is turned face-up, it deals 2 damage to any target.\nA deck can have any number of cards named Screaming Scarecrow.

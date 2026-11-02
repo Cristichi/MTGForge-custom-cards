@@ -1,0 +1,12 @@
+Name:Red Gem Cluster
+ManaCost:R
+Types:Artifact Food
+
+A:AB$ GainLife | Cost$ 2 T Sac<1/CARDNAME> | Defined$ You | LifeAmount$ 3 | SpellDescription$ You gain 3 life.
+
+T:Mode$ ChangesZone | Origin$ Battlefield | Destination$ Graveyard | ValidCard$ Card.Self | Execute$ TrigRegen | TriggerDescription$ When this artifact is put into a graveyard from the battlefield, regenerate target Dragon.
+SVar:TrigRegen:DB$ Regenerate | ValidTgts$ Creature.Dragon+YouCtrl | TgtPrompt$ Select target Dragon you control to regenerate | SpellDescription$ Regenerate target Dragon. (The next time it would be destroyed this turn, instead tap it, remove it from combat, and heal all damage on it.)
+
+
+DeckHas:Ability$LifeGain
+Oracle:{2}, {T}, Sacrifice this artifact: Gain 3 life.\nWhen this artifact is put into a graveyard from the battlefield, if you control a Dragon, draw a card.

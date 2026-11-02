@@ -1,0 +1,13 @@
+Name:High Forest Outcast
+ManaCost:2 G
+Types:Legendary Enchantment Background
+
+S:Mode$ Continuous | Affected$ Creature.IsCommander+YouOwn | AddTrigger$ TrigOnRoll | Description$ Commander creatures you own have “Whenever you roll a die’s highest natural result, you take the initiative.”
+SVar:TrigOnRoll:Mode$ RolledDie | TriggerZones$ Battlefield | Natural$ True | ValidResult$ Highest | ValidPlayer$ You | Execute$ TrigInitiative | TriggerDescription$ Whenever you roll a die’s highest natural result, you take the initiative.
+SVar:TrigInitiative:DB$ TakeInitiative
+
+S:Mode$ Continuous | Affected$ Creature.IsCommander+YouOwn | AddAbility$ TrigEmptyRoll | Description$ Commander creatures you own have “{G}, {T}: Roll a d20.”
+SVar:TrigEmptyRoll:AB$ RollDice | Cost$ G T | Sides$ 20
+
+AI:RemoveDeck:NonCommander
+Oracle:Commander creatures you own have “Whenever you roll a die’s highest natural result, you take the initiative.” and “{G}, {T}: Roll a d20.”

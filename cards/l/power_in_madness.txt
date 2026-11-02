@@ -1,0 +1,13 @@
+Name:Power in Madness
+ManaCost:2 U
+Types:Legendary Enchantment Background
+
+S:Mode$ Continuous | Affected$ Creature.IsCommander+YouOwn | AddTrigger$ ModeMad | Description$ Commander creatures you own have “Whenever you cast a sorcery spell, roll a d8. If the result is 8, copy that spell. You may choose new targets for the copy. Otherwise, you lose 1 life.”
+
+SVar:ModeMad:Mode$ SpellCast | ValidCard$ Sorcery | ValidActivatingPlayer$ You | Execute$ TrigRollDice | TriggerZones$ Battlefield | TriggerDescription$ Whenever you cast a sorcery spell, roll a d8. If the result is 8, copy that spell. You may choose new targets for the copy. Otherwise, you lose 1 life.
+SVar:TrigRollDice:DB$ RollDice | Sides$ 8 | ResultSubAbilities$ 1-7:DBOuch,8:DBCopy | SpellDescription$ Roll a d8.
+SVar:DBOuch:DB$ LoseLife | Defined$ You | LifeAmount$ 1 | SpellDescription$ 1—7 VERT You lose 1 life.
+SVar:DBCopy:DB$ CopySpellAbility | Defined$ TriggeredSpellAbility | MayChooseTarget$ True | SpellDescription$ 8 VERT Copy that spell. You may choose new targets for the copy.
+
+DeckHints:Type$Sorcery
+Oracle:Commander creatures you own have “Whenever you cast a sorcery spell, roll a d8. If the result is 8, copy that spell. You may choose new targets for the copy. Otherwise, you lose 1 life.”

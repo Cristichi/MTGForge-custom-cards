@@ -1,0 +1,11 @@
+Name:Crowstorm
+ManaCost:C B B B
+Types:Creature Bird
+PT:3/3
+
+K:Disguise:3 C B
+
+T:Mode$ TurnFaceUp | ValidCard$ Card.Self | TriggerZones$ Battlefield | Execute$ TrigPump | TriggerDescription$ When CARDNAME is turned face-up, put two +1/+1 counters on each Scarecrow, face-down creature and black Bird you control.
+SVar:TrigPump:DB$ PumpAll | ValidCards$ Creature.YouCtrl | NumAtt$ +2 | NumDef$ +2  | SpellDescription$ Creatures you control get +2/+2 until end of turn.
+
+Oracle:Disguise {3}{C}{B} (You may cast this card face down for 3 as a 2/2 creature with ward 2. Turn it face up any time for its disguise cost.)\nWhen Crowstorm is turned face-up, creatures you control get +2/+2 this turn.

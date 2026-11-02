@@ -1,0 +1,11 @@
+Name:Purple Gem Cluster
+ManaCost:2
+Types:Artifact Food
+
+A:AB$ GainLife | Cost$ 2 T Sac<1/CARDNAME> | Defined$ You | LifeAmount$ 3 | SpellDescription$ You gain 3 life.
+
+T:Mode$ ChangesZone | Origin$ Battlefield | Destination$ Graveyard | ValidCard$ Card.Self | Execute$ TrigPump | TriggerDescription$ When this artifact is put into a graveyard from the battlefield, until end of turn Dragons you control get +2/+2 and gain vigilance.
+SVar:TrigPump:DB$ PumpAll | ValidCards$ Creature.Dragon+YouCtrl | NumAtt$ +2 | NumDef$ +2 | KW$ Vigilance
+
+DeckHas:Ability$LifeGain
+Oracle:{2}, {T}, Sacrifice this artifact: Gain 3 life.\nWhen this artifact is put into a graveyard from the battlefield, until end of turn Dragons you control get +2/+2 and gain vigilance.

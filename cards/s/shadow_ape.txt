@@ -1,0 +1,8 @@
+Name:Shadow Ape
+ManaCost:1 G
+Types:Creature Ape Zombie
+PT:1/1
+
+A:AB$ Token | Cost$ 1 ExileFromGrave<1/CARDNAME> | ActivationZone$ Graveyard | TokenAmount$ 1 | TokenScript$ c_1_1_spirit | TokenOwner$ You | SpellDescription$ Create a 1/1 colorless Spirit creature token.
+
+Oracle:{1}, Exile this creature from your graveyard: Create a 1/1 colorless Spirit creature token.

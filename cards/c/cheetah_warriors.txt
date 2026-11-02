@@ -1,0 +1,9 @@
+Name:Cheetah Warriors
+ManaCost:3 G
+Types:Creature Cat Warrior
+PT:3/3
+
+T:Mode$ ChangesZone | Origin$ Any | Destination$ Battlefield | ValidCard$ Card.Self | IsPresent$ Creature.Dragon+YouCtrl | Execute$ TrigDraw | TriggerDescription$ When CARDNAME enters, if you control a Dragon, draw a card.
+SVar:TrigDraw:DB$ Draw | NumCards$ 1
+
+Oracle:When this creature enters, if you control a Dragon, draw a card.

@@ -1,0 +1,14 @@
+Name:Lost in the Feywilds
+ManaCost:1 G
+Types:Legendary Enchantment Background
+
+S:Mode$ Continuous | Affected$ Creature.IsCommander+YouOwn | AddAbility$ TrigEach | Description$ Commander creatures you own have “{1}{G}, {T}: Each player rolls a d20:\n1-9 | Draw a card.\n10-19 | Draw two cards.\n20 | Draw two cards. Gain 3 life.”
+SVar:TrigEach:AB$ RepeatEach | Cost$ 1 G T | RepeatPlayers$ Player | RepeatSubAbility$ FeyRoll
+
+SVar:FeyRoll:DB$ RollDice | Sides$ 20 | ResultSubAbilities$ 1-9:DBClue,10-19:DBDraw1,20:DBDraw2 | Defined$ RememberedPlayer | SpellDescription$ Each player rolls a d20:\n1-9 | Draw a card.\n10-19 | Draw two cards.\n20 | Draw two cards. Gain 3 life.
+SVar:DBClue:DB$ Investigate | Defined$ RememberedPlayer
+SVar:DBDraw1:DB$ Draw | Defined$ RememberedPlayer | NumCards$ 1
+SVar:DBDraw2:DB$ Draw | Defined$ RememberedPlayer | NumCards$ 2 
+
+AI:RemoveDeck:NonCommander
+Oracle:Commander creatures you own have “{1}{G}, {T}: Each player rolls a d20:\n1-9 | Investigate.\n10-19 | Draw a card.\n20 | Draw two cards.”

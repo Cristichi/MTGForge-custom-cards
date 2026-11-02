@@ -1,0 +1,13 @@
+Name:Sparx
+Colors:green
+Types:Legendary Creature Insect
+PT:1/1
+
+K:Flying
+K:Vigilance
+
+T:Mode$ ChangesZone | Origin$ Battlefield | Destination$ Graveyard | ValidCard$ Card.Self | Execute$ TrigSave | TriggerDescription$ When CARDNAME dies, return target legendary Dragon you own from your command zone or graveyard to your hand.
+
+SVar:TrigSave:DB$ ChangeZone | Origin$ Command,Graveyard | Destination$ Hand | ValidTgts$ Dragon.Legendary+YouOwn | TargetMin$ 1 | TargetMax$ 1 | TgtPrompt$ Return target legendary Dragon you own from your command zone or graveyard to your hand.
+
+Oracle:Flying\nWhen Sparx dies, return target legendary Dragon you own from the command zone or your graveyard to your hand.

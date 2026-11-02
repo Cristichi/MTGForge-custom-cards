@@ -1,0 +1,9 @@
+Name:Warfang's Army
+ManaCost:2 W
+Types:Creature Mole Warrior
+PT:3/3
+
+S:Mode$ Continuous | Affected$ Card.Self | AddKeyword$ Reach | IsPresent$ Artifact.noncreature+YouCtrl+untapped
+S:Mode$ Continuous | Affected$ Card.Self | AddKeyword$ Deathtouch | IsPresent$ Creature.Dragon+YouCtrl
+
+Oracle:Warfang’s Army has reach as long as you control an untapped noncreature artifact.\nWarfang’s Army has deathtouch as long as you control a Dragon.

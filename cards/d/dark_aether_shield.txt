@@ -1,0 +1,8 @@
+Name:Dark Aether Shield
+ManaCost:1 U B
+Types:Instant
+
+A:SP$ ChangeZone | TargetType$ Spell.nonCreature | ValidTgts$ Card | UnlessCost$ X | TgtZone$ Stack | Origin$ Stack | Destination$ Exile | TgtPrompt$ Exile target noncreature spell unless its controller pays X, where X is the number of times you have cast a commander from the command zone this game.
+SVar:X:TriggeredCard$CommanderCastFromCommandZone
+
+Oracle:Exile target noncreature spell unless its controller pays X, where X is the number of times you have cast a commander from the command zone this game.

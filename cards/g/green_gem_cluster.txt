@@ -1,0 +1,11 @@
+Name:Green Gem Cluster
+ManaCost:G
+Types:Artifact Food
+
+A:AB$ GainLife | Cost$ 2 T Sac<1/CARDNAME> | Defined$ You | LifeAmount$ 3 | SpellDescription$ You gain 3 life.
+
+T:Mode$ ChangesZone | Origin$ Battlefield | Destination$ Graveyard | ValidCard$ Card.Self | Execute$ TrigDraw | TriggerDescription$ When this artifact is put into a graveyard from the battlefield, you may behold a Dragon. If you do, draw a card.
+SVar:TrigDraw:AB$ Draw | Cost$ Behold<1/Dragon> | NumCards$ 1
+
+DeckHas:Ability$LifeGain
+Oracle:{2}, {T}, Sacrifice this artifact: Gain 3 life.\nWhen this artifact is put into a graveyard from the battlefield, you may behold a Dragon. If you do, draw a card.

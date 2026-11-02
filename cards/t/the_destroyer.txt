@@ -1,0 +1,13 @@
+Name: The Destroyer
+ManaCost: 6 B R
+Types: Legendary Artifact Creature Construct
+PT:1/10
+
+K:Suspend:4:4 B R
+
+T:Mode$ ChangesZone | Origin$ Any | Destination$ Battlefield | ValidCard$ Creature | TriggerZones$ Battlefield | Execute$ TrigPutCounter | TriggerDescription$ Whenever another creature enters, put a finality counter on it
+SVar:TrigPutCounter:DB$ PutCounter | Defined$ TriggeredCardLKICopy | CounterType$ FINALITY | CounterNum$ 1
+
+S:Mode$ CantAttack,CantBlock | ValidCard$ Card.Self | IsPresent$ Card | PresentZone$ Exile | PresentCompare$ LT10 | Description$ NICKNAME can’t attack or block unless there are ten or more cards in exile.
+
+Oracle:Suspend 4—{4}{B}{R}\nWhenever a creature enters, put a finality counter on it.\nThe Destroyer can’t attack or block unless there are ten or more cards in exile.

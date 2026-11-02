@@ -1,0 +1,16 @@
+Name:Spyro, the Purple Dragon
+ManaCost:2 R G
+Types:Legendary Creature Dragon
+PT:3/3
+
+K:Partner with:Cynder, Awoken from Darkness
+K:Flying
+
+T:Mode$ ChangesZone | Origin$ Any | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigImmediateTrig | TriggerDescription$ Whenever CARDNAME enters or attacks, you may pay {1}{W}. When you do, put a shield counter on another target Dragon you control.
+
+T:Mode$ Attacks | ValidCard$ Card.Self | Execute$ TrigImmediateTrig | TriggerZones$ Battlefield | Secondary$ True | TriggerDescription$ Whenever CARDNAME enters or attacks, you may pay {1}{W}. When you do, put a shield counter on another target Dragon you control.
+
+SVar:TrigImmediateTrig:AB$ PutCounter | Cost$ 1 W | ValidTgts$ Creature.Other+Dragon+YouCtrl | TgtPrompt$ Select another target Dragon you control to put a shield counter. | CounterType$ SHIELD | TriggerDescription$ Put a shield counter on another target Dragon you control.
+
+DeckHints:Type$Dragon
+Oracle:Partner with Cynder, Awoken from Darkness\nFlying\nWhenever Spyro enters or attacks, you may pay {1}{W}. When you do, put a shield counter on another target Dragon you control.

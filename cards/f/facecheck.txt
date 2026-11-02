@@ -1,0 +1,11 @@
+Name:Facecheck
+ManaCost:1 G
+Types:Sorcery
+
+K:Gift
+SVar:GiftAbility:DB$ Token | TokenAmount$ 1 | TokenScript$ c_control_ward | TokenTapped$ True | TokenOwner$ Promised | LockTokenScript$ True | GiftDescription$ a tapped Control Ward
+
+A:SP$ Draw | NumCards$ X | SpellDescription$ Draw a card. | SubAbility$ DBDebug
+SVar:X:Count$PromisedGift.2.1
+
+Oracle:Gift a tapped Control Ward. (You may promise an opponent a gift as you cast this spell. If you do, they create a tapped Control Ward token before its other effects.) (It’s an artifact Clue with “1, Sacrifice this token: Turn target face-down creature an opponent controls face-up.” and “2, Sacrifice this token: Draw a card.”)\nDraw a card. If the gift was promised, draw two cards instead.

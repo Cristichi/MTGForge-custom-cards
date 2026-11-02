@@ -1,0 +1,12 @@
+Name:Whispering Scarecrow
+ManaCost:C
+Types:Artifact Creature Scarecrow
+PT:2/2
+
+K:Disguise:B
+K:A deck can have any number of cards named CARDNAME.
+
+T:Mode$ TurnFaceUp | ValidCard$ Card.Self | Execute$ TrigHideInBush | TriggerZones$ Battlefield | TriggerDescription$ When Whispering Scarecrow is turned face-up, you may return a target card you own with a Disguise ability from your graveyard or the command zone to your hand.
+SVar:TrigHideInBush:DB$ ChangeZone | Origin$ Command,Graveyard | Destination$ Hand | ValidTgts$ Card.YouOwn+withDisguise | TgtPrompt$ Choose target creature card in your graveyard |
+
+Oracle:Disguise {B} (You may cast this card face down for {3} as a 2/2 creature with ward 2. Turn it face up any time for its disguise cost.)\nWhen Whispering Scarecrow is turned face-up, you may return a target card you own with a Disguise ability from your graveyard or the command zone to your hand.\nA deck can have any number of cards named Whispering Scarecrow.

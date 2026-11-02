@@ -1,0 +1,9 @@
+Name:Chief Prowlus
+ManaCost:4 G W W
+Types:Creature Cat Warrior
+PT:7/7
+
+K:Vigilance
+K:Champion:Dragon,Cat
+
+Oracle:Champion a Dragon or Cat\nVivilange

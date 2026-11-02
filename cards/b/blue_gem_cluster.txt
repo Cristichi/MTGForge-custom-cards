@@ -1,0 +1,11 @@
+Name:Blue Gem Cluster
+ManaCost:U
+Types:Artifact Food
+
+A:AB$ GainLife | Cost$ 2 T Sac<1/CARDNAME> | Defined$ You | LifeAmount$ 3 | SpellDescription$ You gain 3 life.
+
+T:Mode$ ChangesZone | Origin$ Battlefield | Destination$ Graveyard | ValidCard$ Card.Self | Execute$ TrigCounters | TriggerDescription$ When this artifact is put into a graveyard from the battlefield, put a +1/+1 counter on up to two target Dragons.
+SVar:TrigCounters:DB$ PutCounter | TargetMin$ 0 | TargetMax$ 2 | ValidTgts$ Creature.Dragon+YouCtrl | TgtPrompt$ Select up to two target Dragons you control to put +1/+1 | CounterType$ P1P1 | CounterNum$ 1 | SpellDescription$ Put a +1/+1 counter on each of up to two target creatures you control. You gain 2 life.
+
+DeckHas:Ability$LifeGain
+Oracle:{2}, {T}, Sacrifice this artifact: Gain 3 life.\nWhen this artifact is put into a graveyard from the battlefield, put a +1/+1 counter on up to two target Dragons.

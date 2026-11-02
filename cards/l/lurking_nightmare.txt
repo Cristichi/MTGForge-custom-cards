@@ -1,0 +1,7 @@
+Name:Lurking Nightmare
+Types:Creature Demon Nightmare
+PT:2/2
+
+K:Disguise:B
+
+Oracle:Disguise {B} (You may cast this card face down for 3 as a 2/2 creature with ward 2. Turn it face up any time for its disguise cost.)

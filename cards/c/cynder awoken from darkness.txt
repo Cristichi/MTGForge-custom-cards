@@ -1,0 +1,15 @@
+Name:Cynder, Awoken from Darkness
+ManaCost:1 U B
+Types:Legendary Creature Dragon
+PT:3/2
+
+K:Partner with:Spyro, the Purple Dragon
+K:Flying
+
+A:AB$ ChangeZone | Cost$ 2 W | ChangeType$ Card.Self | Origin$ Battlefield | Destination$ Library | LibraryPosition$ -1 | SubAbility$ DBReturnsHand | TriggerDescription$ Put CARDNAME on the bottom of your library, then put each other Dragon commander you own from your command zone into your hand.
+
+SVar:DBReturnsHand:DB$ ChangeZoneAll | ConditionDescription$ If you do, | ChangeType$ Card.Other+Dragon+IsCommander+YouOwn | Origin$ Command | Destination$ Hand | TriggerDescription$ Put each other Dragon commander you own from your command zone into your hand. | SubAbility$ DBCleanup
+SVar:DBCleanup:DB$ Cleanup 
+
+DeckHints:Type$Dragon
+Oracle:Partner with Spyro, the Purple Dragon\nFlying\n{2}{W}: Put Cynder on the bottom of your library, then put each other Dragon commander you own from your command zone into your hand.

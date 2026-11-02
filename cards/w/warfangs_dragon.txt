@@ -1,0 +1,13 @@
+Name:Warfang's Dragon
+ManaCost:2 R R
+Types:Creature Dragon
+PT:4/4
+
+K:Flying
+
+T:Mode$ Attacks | ValidCard$ Card.Self | TriggerZones$ Battlefield | Execute$ TrigPump | TriggerDescription$ Whenever this creature attacks, up to one target Mole or Cat you control gains flying until end of turn.
+SVar:TrigPump:DB$ Pump | ValidTgts$ Creature.Mole+YouCtrl,Creature.Cat+YouCtrl | TargetMin$ 0 | TargetMax$ 1 | TgtPrompt$ Select target Mole or Cat you control | KW$ Flying
+
+A:AB$ PumpAll | Cost$ 1 R | ValidCards$ Dragon.YouCtrl,Mole.YouCtrl,Cat.YouCtrl | NumAtt$ +1 | SpellDescription$ Dragons, Moles and Cats you control get +1/+0 until end of turn.
+
+Oracle:Flying\nWhenever this creature attacks, up to one target Mole or Cat you control gains flying until end of turn.\n{1}{R}: Dragons, Moles and Cats you control get +1/+0 until end of turn.

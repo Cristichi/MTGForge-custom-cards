@@ -1,0 +1,8 @@
+Name:Mason, Master Artisan
+ManaCost:1 W
+Types:Legendary Creature Mole Artificer
+PT:2/2
+
+A:AB$ Mana | Cost$ tapXType<1/Artifact.nonCreature+untapped> | Produced$ W | SorcerySpeed$ True | ActivationLimit$ 1 | SpellDescription$ Add one mana of any color.
+
+Oracle:Tap an untapped noncreature artifact you control: Add {W}. Activate only as a sorcery and only once per turn.

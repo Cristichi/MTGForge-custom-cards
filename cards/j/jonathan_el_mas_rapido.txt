@@ -1,0 +1,15 @@
+Name:Jonathan, el Mas Rapido
+ManaCost:2 W
+Types:Legendary Creature Human Pilot
+PT:3/3
+
+K:Partner with:Red Bull Racing RB19
+K:Start your engines
+
+S:Mode$ TapPowerValue | ValidSA$ Activated.Crew+Vehicle+Legendary | ValidCard$ Card.Self | Value$ 4 | Description$ CARDNAME tripula Vehículos legendarios como si su fuerza fuese de 4 más.
+
+T:Mode$ Crewed | ValidCrew$ Card.Self | Execute$ TrigHalo | TriggerZones$ Battlefield | TriggerDescription$ Halo — Cuando CARDNAME tripula un Vehículo, CARDNAME sale de fase.
+SVar:TrigHalo:DB$ Phases | Defined$ Self
+
+DeckHints:Type$Vehicle
+Oracle:Camarada de Red Bull Racing RB19\n¡Enciende el motor!\nJonathan tripula Vehículos legendarios como si su fuerza fuese de 4 más.\nHalo — Cuando Jonathan tripula un Vehículo, sale de fase.

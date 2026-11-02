@@ -1,0 +1,16 @@
+Name: Malefor, the Dark Master
+ManaCost: 15 U B R
+Types: Legendary Creature Dragon
+PT: 10/10
+
+K:Flying
+K:Ward:2
+
+S:Mode$ ReduceCost | ValidCard$ Card.Self | Type$ Spell | Amount$ X | EffectZone$ All | Description$ This spell costs {1} less to cast for each card you own in exile.
+SVar:X:Count$ValidExile Card.YouOwn
+
+S:Mode$ Continuous | Affected$ Creature.counters_GE1_FINALITY | Goad$ True | AddKeyword$ Haste | Description$ Creatures with finality counters are goaded and gain haste
+
+A:AB$ PutCounterAll | Cost$ 5 U B T | ValidCards$ Creature | CounterType$ FINALITY | CounterNum$ 1 | SpellDescription$ Put a finality counter on each creature.
+
+Oracle:This spell costs {1} less to cast for each card you own in exile.\nFlying, ward {2}\nCreatures with finality counters are goaded and gain haste.\n{5}{U}{B}, {T}: Put a finality counter on each creature.

@@ -1,0 +1,14 @@
+[metadata]
+Code=JCC
+Date=2025-09-10
+Name=Joni Custom Commander
+Type=Expansion
+ScryfallCode=JCC
+
+[cards]
+1 M Jonathan, el Mas Rapido @Cristichi
+2 M Red Bull Racing RB19 @Cristichi
+
+[tokens]
+
+[other]

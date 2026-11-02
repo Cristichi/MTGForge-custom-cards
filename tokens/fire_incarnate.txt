@@ -1,0 +1,9 @@
+Name:Fire Illusion
+ManaCost:no cost
+Colors:red
+Types:Creature Dragon
+PT:4/3
+K:Reach
+T:Mode$ DamageDealtOnce | ValidSource$ Card.Self | Execute$ TrigSac | TriggerZones$ Battlefield | TriggerDescription$ When this creature deals damage, sacrifice it.
+SVar:TrigSac:DB$ Sacrifice
+Oracle:Reach\nWhen this creature deals damage, sacrifice it.

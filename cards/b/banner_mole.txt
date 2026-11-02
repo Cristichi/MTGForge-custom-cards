@@ -1,0 +1,9 @@
+Name:Banner Mole
+ManaCost:2 W
+Types:Creature Mole Warrior
+PT:2/2
+
+S:Mode$ Continuous | Affected$ Card.Other+Mole+nonVillain | AddPower$ 1 | AddToughness$ 1 | Description$ Other Moles you control get +1/+1.
+S:Mode$ Continuous | Affected$ Card.Dragon+nonVillain | AddPower$ 1 | AddToughness$ 1 | Description$ Dragons you control get +1/+1.
+
+Oracle:Other non-Villain Moles you control get +1/+1.\nNon-Villain Dragons you control get +1/+1.

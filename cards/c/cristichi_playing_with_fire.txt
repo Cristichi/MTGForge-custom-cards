@@ -1,0 +1,11 @@
+Name:Cristichi, Playing with Fire
+ManaCost:2 R R
+Types:Legendary Creature Dragon Sorcerer
+PT:3/4
+K:Choose a Background
+T:Mode$ DamageDoneOnce | ValidTarget$ Card.Self | Execute$ TrigToken | TriggerZones$ Battlefield | TriggerDescription$ Whenever CARDNAME is dealt damage, create a 4/3 red Fire Incarnate dragon creature token with reach and “When this creature deals damage, sacrifice it.”
+T:Mode$ RolledDieOnce | ValidPlayer$ You | Execute$ TrigToken | TriggerZones$ Battlefield |TriggerDescription$ Whenever you roll one or more dice, create a 4/3 red Fire Incarnate dragon creature token with reach and “When this creature deals damage, sacrifice it.”
+SVar:TrigToken:DB$ Token | TokenScript$ fire_incarnate
+DeckHas:Ability$Token|Sacrifice
+DeckHints:Type$Dragon
+Oracle:Whenever Cristichi is dealt damage and whenever you roll one or more dice, create a 4/3 red Fire Incarnate dragon creature token with reach and “When this creature deals damage, sacrifice it.”\nChoose a background

@@ -1,0 +1,9 @@
+Name:Surprise Party
+ManaCost:2 U
+Types:Instant
+
+A:SP$ Counter | TargetType$ Spell | ValidTgts$ Card | SubAbility$ DBRepeat | SpellDescription$ Counter target spell.
+SVar:DBRepeat:DB$ RepeatEach | RepeatPlayers$ Player | RepeatSubAbility$ DBManifest
+SVar:DBManifest:DB$ ManifestDread | DefinedPlayer$ RememberedPlayer | SpellDescription$ Manifest dread. 
+
+Oracle:Counter target spell. Each player manifests dread. (That player looks at the top two cards of their library, then puts one onto the battlefield face down as a 2/2 creature and the other into their graveyard. If it’s a creature card, it can be turned face up any time for its mana cost.)

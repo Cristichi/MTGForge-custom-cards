@@ -1,0 +1,10 @@
+Name: Ignitus, the Fire Guardian
+ManaCost: 3 R R
+Types: Legendary Creature Dragon
+PT:4/4
+
+K:Flying
+
+A:AB$ PumpAll | Cost$ 3 Sac<1/CARDNAME> | ValidCards$ Creature.YouCtrl+Dragon+IsCommander | KW$ Indestructible | SpellDescription$ Creatures you control gain indestructible until end of turn.
+
+Oracle:Flying\n{3}, Sacrifice Ignitus: Dragon commanders you control gain indestructible until end of turn.

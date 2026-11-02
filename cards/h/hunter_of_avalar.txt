@@ -1,0 +1,13 @@
+Name:Hunter of Avalar
+ManaCost:4 G
+Types:Legendary Creature Cat Scout
+PT:4/2
+
+K:First Strike
+K:Warp:2 W
+
+T:Mode$ ChangesZone | ValidCard$ Card.Self | Origin$ Any | Destination$ Battlefield | Execute$ TrigDraw | TriggerDescription$ When NICKNAME enters, you may behold a Dragon. If you do, draw a card. (To behold a Dragon, choose a Dragon you control or reveal a Dragon card from your hand.)
+
+SVar:TrigDraw:AB$ Draw | Cost$ Behold<1/Dragon> | NumCards$ 1
+
+Oracle:Vigilance\nWhen Hunter enters, you may behold a Dragon. If you do, draw a card.\nWarp {2}{W}

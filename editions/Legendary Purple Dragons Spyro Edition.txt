@@ -1,0 +1,109 @@
+[metadata]
+Code=LPDS
+Date=2025-10-15
+Name=Legendary Purple Dragons Spyro
+Type=Expansion
+
+[cards]
+1 M Spyro, the Purple Dragon @Cristichi
+2 M Cynder, Awoken from Darkness @Cristichi
+3 U Sparx @Cristichi
+4 U Malefor's Statue @Cristichi
+5 R Ignitus, the Fire Guardian @Cristichi
+6 R Terrador, the Earth Guardian @Cristichi
+7 R Cyril, the Ice Guardian @Cristichi
+8 R Volteer, the Voltic Guardian @Cristichi
+9 C Catacombs' Arena @Cristichi
+10 R The Chronicler @Cristichi
+11 U Cheetah Village @Cristichi
+12 U Cheetah Warriors @Cristichi
+13 U Hunter of Avalar @Cristichi
+14 R Elemental Prowess @Cristichi
+15 C Red Gem Cluster @Cristichi
+16 C Green Gem Cluster @Cristichi
+17 C Blue Gem Cluster @Cristichi
+18 C Purple Gem Cluster @Cristichi
+19 U Dark Aether Shield @Cristichi
+20 C Meadow, Lost and Found @Cristichi
+21 C Mason, Master Artisan @Cristichi
+22 C Warfang's Army @Cristichi
+23 C Banner Mole @Cristichi
+24 U Warfang @Cristichi
+25 U Dragon Constellation @Cristichi
+26 R Chief Prowlus @Cristichi
+27 R Warfang's Allies @Cristichi
+28 R Warfang's Dragon @Cristichi
+29 U Hermit of the Valley @Cristichi
+30 C Time Crystal @Cristichi
+
+31 R Adult Gold Dragon @WOTC
+32 C Black Dragon Gate @WOTC
+33 R Blasphemous Act @WOTC
+34 R Bleachbone Verge @WOTC
+35 R Bountiful Promenade @WOTC
+36 R Broodmate Tyrant @WOTC
+37 C Carnelian Orb of Dragonkind @WOTC
+38 R Chromatic Lantern @WOTC
+39 C Command Tower @WOTC
+40 C Commander's Sphere @WOTC
+41 C Cultivate @WOTC
+42 M Dracogenesis @WOTC
+43 U Draconic Muralists @WOTC
+44 R Dragon's Hoard @WOTC
+45 R Dragonborn Champion @WOTC
+46 U Dragonspeaker Shaman @WOTC
+47 U Encroaching Dragonstorm @WOTC
+48 C Farhaven Elf @WOTC
+49 U Farseek @WOTC
+50 R Haven of the Spirit Dragon @WOTC
+52 R Hraesvelgr of the First Brood @WOTC
+54 R Indatha Triome @WOTC
+55 R Jetmir's Garden @WOTC
+56 M Karrthus, Tyrant of Jund @WOTC
+57 R Ketria Triome @WOTC
+58 U Kheru Goldkeeper @WOTC
+59 C Kodama's Reach @WOTC
+60 R Kyodai, Soul of Kamigawa @WOTC
+61 R Lathliss, Dragon Queen @WOTC
+62 R Maelstrom of the Spirit Dragon @WOTC
+63 U Myriad Landscape @WOTC
+64 M Nogi, Draco-Zealot @WOTC
+65 C Path of Ancestry @WOTC
+66 C Path to the Festival @WOTC
+67 C Patron of the Arts @WOTC
+68 U Purging Stormbrood @WOTC
+69 C Rampant Growth @WOTC
+70 U Rapacious Dragon @WOTC
+71 R Raugrin Triome @WOTC
+72 C Sol Ring @WOTC
+73 C Sakura-Tribe Elder @WOTC
+74 M Sarkhan, Soul Aflame @WOTC
+75 C Scaled Nurturer @WOTC
+76 C Search for Tomorrow @WOTC
+77 U Slimefoot's Survey @WOTC
+78 R Spara's Headquarters @WOTC
+79 R Spire Garden @WOTC
+80 C Wayfarer's Bauble @WOTC
+81 R Sunbillow Verge @WOTC
+82 R Taurean Mauler @WOTC
+83 R Temple Garden @WOTC
+84 U Temple of the Dragon Queen @WOTC
+85 M Tiamat @WOTC
+86 R Undergrowth Stadium @WOTC
+87 R Vengeful Ancestor @WOTC
+88 U Korlessa, Scale Singer @WOTC
+89 R Wastewood Verge @WOTC
+90 R Willowrush Verge @WOTC
+91 R Windswept Heath @WOTC
+92 R Zagoth Triome @WOTC
+
+
+93 Forest @Cristichi
+94 Plains @Cristichi
+95 Mountain @Cristichi
+96 Island @Cristichi
+97 Swamp @Cristichi
+
+[tokens]
+
+[other]

@@ -1,0 +1,13 @@
+Name:Warfang's Allies
+ManaCost:5 R G W
+Types:Creature Dragon Cat Mole
+PT:6/6
+
+K:Flying
+K:Vigilance
+
+S:Mode$ ReduceCost | ValidCard$ Card.Self | Type$ Spell | Amount$ 1 | EffectZone$ All | IsPresent$ Creature.Dragon+YouCtrl | Description$ This spell costs {1} less to cast if you control a Dragon.
+S:Mode$ ReduceCost | ValidCard$ Card.Self | Type$ Spell | Amount$ 1 | EffectZone$ All | IsPresent$ Creature.Cat+YouCtrl | Description$ This spell costs {1} less to cast if you control a Cat.
+S:Mode$ ReduceCost | ValidCard$ Card.Self | Type$ Spell | Amount$ 1 | EffectZone$ All | IsPresent$ Creature.Mole+YouCtrl | Description$ This spell costs {1} less to cast if you control a Mole.
+
+Oracle:This spell costs {1} less to cast if you control a Dragon, {1} less to cast if you control a Cat and {1} less to cast if you control a Mole.\nFlying, vigilance

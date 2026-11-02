@@ -1,0 +1,16 @@
+Name:Red Bull Racing RB19
+ManaCost:5 U R
+Types:Legendary Artifact Vehicle
+PT:9/8
+
+K:Partner with:Jonathan, el Mas Rapido
+
+T:Mode$ Attacks | ValidCard$ Card.Self | Execute$ TrigRobo | TriggerDescription$ Siempre que Red Bull Racing RB19 ataque, roba una carta.
+SVar:TrigRobo:DB$ Draw | NumCards$ 1
+
+S:Mode$ Continuous | Affected$ Card.Self | Condition$ MaxSpeed | AddStaticAbility$ MaxSpeedStatic | Description$ Velocidad máxima — Red Bull Racing RB19 obtiene la habilidades de prisa y dañar primero.
+SVar:MaxSpeedStatic:Mode$ Continuous | Secondary$ True | Affected$ Card.Self | AddKeyword$ Haste & First Strike | Description$ Velocidad máxima — Red Bull Racing RB19 obtiene la habilidades de prisa y dañar primero.
+
+K:Crew:7
+
+Oracle:Camarada de Jonathan, el Más Rápido\nSiempre que Red Bull Racing RB19 ataque, roba una carta.\nVelocidad máxima — Red Bull Racing RB19 obtiene la habilidades de prisa y dañar primero.\nTripular 7

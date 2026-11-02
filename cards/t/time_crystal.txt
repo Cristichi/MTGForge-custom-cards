@@ -1,0 +1,12 @@
+Name:Time Crystal
+ManaCost:5 W W
+Types:Enchantment
+
+K:Flash
+
+T:Mode$ ChangesZone | Origin$ Any | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigExile | TriggerDescription$ When this enchantment enters, exile up to three target creatures until this enchantment leaves the battlefield.
+SVar:TrigExile:DB$ ChangeZone | Origin$ Battlefield | Destination$ Exile | Duration$ UntilHostLeavesPlay | ValidTgts$ Creature | TargetMin$ 0 | TargetMax$ 3 | TgtPrompt$ Select up to three target creatures to exile until this enchantment leaves the battlefield
+
+A:AB$ Draw | Cost$ Sac<1/CARDNAME> | NumCards$ 1 | SpellDescription$ Draw a card.
+
+Oracle:Flash\nWhen this enchantment enters, exile up to three target creatures until this enchantment leaves the battlefield.\n{T}, Sacrifice this enchantment: Draw a card.

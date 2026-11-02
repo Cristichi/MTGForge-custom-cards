@@ -1,0 +1,15 @@
+Name:Spyro, Hero of Avalar
+ManaCost:U R
+Types:Legendary Creature Dragon
+PT:2/1
+
+K:Flying
+K:Haste
+
+T:Mode$ ChangesZone | ValidCard$ Card.Self | Origin$ Any | Destination$ Battlefield | Execute$ TrigFeedSparx 
+T:Mode$ ChangesZone | ValidCard$ Card.Self | Origin$ Battlefield | Destination$ Graveyard | Execute$ TrigFeedSparx
+
+SVar:TrigFeedSparx:AB$ Token | Cost$ 2 G | TokenScript$ sparx | TriggerDescription$ When CARDNAME enters or dies, you may pay {2}{G}. If you do, create Sparx
+
+DeckHints:Type$Dragon
+Oracle:Flying, haste\nWhen Spyro enters or dies, you may pay {2}{G}. If you do, create Sparx, a legendary 1/1 green Insect creature token with flying, vigilance and “When Sparx dies, return target legendary Dragon you own the your command zone or your graveyard to your hand.”.

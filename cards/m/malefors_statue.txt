@@ -1,0 +1,10 @@
+Name: Malefor's Statue
+ManaCost: 3
+Types: Artifact
+
+A:AB$ Mana | Cost$ T | Produced$ Any | SpellDescription$ Add one mana of any color.
+
+T:Mode$ SpellCast | ValidCard$ Card.YouOwn+IsCommander | ValidActivatingPlayer$ You | TriggerZones$ Battlefield | Execute$ TrigUntap | TriggerDescription$ Whenever you cast a commander spell, untap CARDNAME.
+SVar:TrigUntap:DB$ Untap | Defined$ Self
+
+Oracle:Whenever you cast a commander spell, untap Malefor’s Statue.\n{T}: Add one mana of any color.

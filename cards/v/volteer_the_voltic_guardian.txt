@@ -1,0 +1,10 @@
+Name: Volteer, the Voltic Guardian
+ManaCost: 2 W W
+Types: Legendary Creature Dragon
+PT:5/2
+
+K:Flying
+K:Vigilance
+K:First strike
+
+Oracle:Flying, vigilance, first strike

@@ -1,0 +1,11 @@
+Name:Hermit of the Valley
+ManaCost:2 B G
+Types:Legendary Creature Cat Shaman
+PT:2/2
+
+K:Deathtouch
+
+T:Mode$ Attacks | ValidCard$ Creature.Other+YouCtrl | Alone$ True | TriggerZones$ Battlefield | Execute$ TrigExile | TriggerDescription$ Whenever another creature you control attacks alone, exile up to one target creature card from a graveyard.
+SVar:TrigExile:DB$ ChangeZone | Origin$ Graveyard | Destination$ Exile | ValidTgts$ Creature | TargetMin$ 0 | TargetMax$ 1 | TgtPrompt$ Select target creature in a graveyard to exile
+
+Oracle:Deathtouch\nWhenever another creature you control attacks alone, exile up to one target creature card from a graveyard.

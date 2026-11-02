@@ -1,0 +1,12 @@
+Name:Cheetah Village
+ManaCost:no cost
+Types:Land
+
+R:Event$ Moved | ValidCard$ Card.Self | Destination$ Battlefield | ReplacementResult$ Updated | ReplaceWith$ ETBTapped | Description$ CARDNAME enters tapped.
+SVar:ETBTapped:DB$ Tap | Defined$ Self | ETB$ True
+
+A:AB$ Mana | Cost$ T | Produced$ Combo R G | SpellDescription$ Add {R} or {G}.
+
+A:AB$ ChangeZone | Cost$ 3 W T Sac<1/CARDNAME> | TgtPrompt$ Choose target nonWhite creature card in your graveyard | ValidTgts$ Creature.YouCtrl+nonWhite | Origin$ Graveyard | Destination$ Hand | SpellDescription$ Return target non-white creature from your graveyard to your hand.
+
+Oracle:This land enters tapped.\n{T}: Add {R} or {G}.\n{3}{W}, {T}, Sacrifice this land: Return target nonWhite creature from your graveyard to your hand.

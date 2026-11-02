@@ -1,0 +1,16 @@
+Name:Fiddlesticks, the Ancient Fear
+ManaCost:5 B
+Types:Legendary Creature Scarecrow Demon
+PT:7/7
+
+K:Disguise:5 G U
+
+T:Mode$ ChangesZone | Origin$ Any | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ DBSetup | TriggerDescription$ When CARDNAME enters, exile all nontoken creatures you control in a face-down pile, shuffle that pile, then manifest those cards.
+
+SVar:DBSetup:DB$ ChangeZoneAll | ChangeType$ Creature.!token+YouCtrl | Origin$ Battlefield | Destination$ Exile | RememberChanged$ True | ExileFaceDown$ True | SubAbility$ DBCloak | SpellDescription$ Exile all nontoken creatures you control in a face-down pile, shuffle that pile, then manifest those cards.
+SVar:DBCloak:DB$ Cloak | Defined$ Remembered | DefinedPlayer$ You | Shuffle$ True | SubAbility$ DBCleanup
+SVar:DBCleanup:DB$ Cleanup | ClearRemembered$ True
+
+S:Mode$ Continuous | Affected$ Creature.YouCtrl+withDisguise,Creature.faceDown+YouCtrl | AddToughness$ 3 | AddPower$ 3 | AddKeyword$ Deathtouch | Description$ Scarecrows, face-down creatures and black Birds you control get +3/+3 and gain deathtouch.
+
+Oracle:Disguise {5}{G}{U} (You may cast this card face down for 3 as a 2/2 creature with ward 2. Turn it face up any time for its disguise cost.)\nWhen Fiddlesticks enters, exile all nontoken creatures you control in a face-down pile, shuffle that pile, then cloak those cards. (To cloak a card, put it onto the battlefield face down as a 2/2 creature with ward 2. Turn it face up any time for its mana cost if it’s a creature card.)\nCreatures with Disguise and face-down creature you control get +3/+3 and have deathtouch.
