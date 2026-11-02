@@ -108,7 +108,7 @@ def main():
     pics_cards_folder = os.path.join(pics_folder, 'cards')
     
     install_script_path = os.path.join(share_folder, "(CHECK README FIRST) Install custom cards.bat")
-    readme_path = os.path.join(share_folder, "README.md")
+    readme_path = os.path.join(share_folder, "READ ME BEFORE INSTALL.md")
     zip_path = os.path.join(share_folder, 'share.zip')
 
     editions = list_editions(editions_folder)
@@ -191,7 +191,7 @@ def main():
         if os.path.exists(install_script_src):
             zipf.write(install_script_src, os.path.basename(install_script_path))
         # Add the README file
-        readme_src = os.path.join(os.path.dirname(__file__), "README.md")
+        readme_src = os.path.join(os.path.dirname(__file__), "READ ME BEFORE INSTALL.md")
         if os.path.exists(readme_src):
             zipf.write(readme_src, os.path.basename(readme_path))
 
